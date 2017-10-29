@@ -34,6 +34,7 @@ def get_time():
     hour = now.hour
     minute = now.minute
     second = now.second
+    millisecond = now.millisecond
 
-    text = "The time is %d:%d:%d" % (hour, minute, second)
+    text = "The time is %d:%d:%d:%d" % (hour, minute, second, millisecond)
     return text
