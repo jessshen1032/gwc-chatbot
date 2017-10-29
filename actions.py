@@ -47,9 +47,9 @@ def get_date():
     print('date action')
     
     now = datetime.datetime.now()
-    day = now.day
     month = now.month
+    day = now.day
     year= now.year
     
-    text = "The date is %d-%d-%d" % (day, month, year)
+    text = "The date is %d-%d-%d" % (month, day, year)
     return text
