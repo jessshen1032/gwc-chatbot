@@ -52,3 +52,4 @@ def get_date():
     year= now.year
     
     text = "The date is %d:%d:%d" % (day, month, year)
+    return text
