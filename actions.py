@@ -46,7 +46,7 @@ def get_date():
     """
     print('time action')
     
-    now = datetim.datetime.now()
+    now = datetime.datetime.now()
     day = now.day
     month = now.month
     year= now.year
