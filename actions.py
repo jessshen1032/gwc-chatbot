@@ -8,6 +8,8 @@ def choose_action(action):
         text = hello()
     elif action == "time":
         text = get_time()
+    elif action == "date":
+        text = get_date()
     else:
         text = "No action matched!"
 
@@ -37,3 +39,16 @@ def get_time():
 
     text = "The time is %d:%d:%d" % (hour, minute, second)
     return text
+
+def get_date():
+    """
+    Tells the user the current date
+    """
+    print('time action')
+    
+    now = datetim.datetime.now()
+    day = now.day
+    month = now.month
+    year= now.year
+    
+    text = "The date is %d:%d:%d" % (day, month, year)
