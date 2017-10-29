@@ -44,7 +44,7 @@ def get_date():
     """
     Tells the user the current date
     """
-    print('time action')
+    print('date action')
     
     now = datetime.datetime.now()
     day = now.day
