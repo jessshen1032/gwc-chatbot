@@ -2,7 +2,7 @@ import datetime
 import random
 
 
-def choose_action(action):
+def choose_action(action, params):
     text = "Looking for action..."
 
     if action == "hello":
