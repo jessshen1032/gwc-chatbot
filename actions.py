@@ -74,5 +74,5 @@ def get_randomfact():
             'You once held a world record when you were born for being the \'Youngest Person on The Planet\'.']
     integer=random.randint(0,10)
     
-    text= "The fact is %s" % (facts[integer])
+    text= "%s" % (facts[integer])
     return text
