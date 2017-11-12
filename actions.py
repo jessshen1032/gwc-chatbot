@@ -6,7 +6,8 @@ def choose_action(action):
     text = "Looking for action..."
 
     if action == "hello":
-        text = hello()
+        person_name = params.get("given-name")
+        text = hello(person_name)
     elif action == "time":
         text = get_time()
     elif action == "date":
@@ -19,13 +20,13 @@ def choose_action(action):
     return text
 
 
-def hello():
+def hello(person_name):
     """
     Says "Hello World" to the user
     """
     print('hello action')
 
-    text = "Hello World"
+    text = "Hi " + str(person_name)
     return text
 
 
