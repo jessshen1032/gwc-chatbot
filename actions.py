@@ -1,4 +1,5 @@
 import datetime
+import random
 
 
 def choose_action(action):
@@ -10,6 +11,8 @@ def choose_action(action):
         text = get_time()
     elif action == "date":
         text = get_date()
+    elif action == "randomfact":
+        text = get_randomfact()
     else:
         text = "No action matched!"
 
@@ -52,4 +55,15 @@ def get_date():
     year= now.year
     
     text = "The date is %d-%d-%d" % (month, day, year)
+    return text
+
+def get_randomfact():
+    """
+    Tells the user a random fact
+    """
+    print('randomfact action')
+    facts= ['Banging your head against a wall burns 150 calories in an hour.', 'A flock of crows is known as a murder.', 'If Pinokio said "My nose will grow", it would cause a paradox.']
+    integer=random.randint(0,2)
+    
+    text= "The fact is %s" % (facts[integer])
     return text
