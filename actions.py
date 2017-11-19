@@ -30,15 +30,15 @@ def get_language(foreign_language):
     print('language action')
     
     text = None
-    if foreign_language is "french":
+    if foreign_language == "french":
         text = "bonjour"
-    elif foreign_language is "german":
+    elif foreign_language == "german":
         text = "hallo"
-    elif foreign_language is "spanish":
+    elif foreign_language == "spanish":
         text = "hola"
-    elif foreign_language is "russian":
+    elif foreign_language == "russian":
         text = "Здравствуйте"
-    elif foreign_language is "italian":
+    elif foreign_language == "italian":
         text = "ciao"
     else:
         text = "No language found!"
