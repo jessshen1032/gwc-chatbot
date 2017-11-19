@@ -14,7 +14,7 @@ def choose_action(action, params):
         text = get_date()
     elif action == "randomfact":
         text = get_randomfact()
-    elif action == "language":
+    elif action == "hello-language":
         foreign_language = params.get("language")
         text = get_language()
     else:
