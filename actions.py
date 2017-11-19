@@ -29,6 +29,7 @@ def get_language(foreign_language):
     Tells user hello in different languages
     """
     print('language action')
+    print(foreign_language)
     
     text = None
     if foreign_language == "french":
