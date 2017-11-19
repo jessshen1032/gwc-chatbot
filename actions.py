@@ -14,12 +14,35 @@ def choose_action(action, params):
         text = get_date()
     elif action == "randomfact":
         text = get_randomfact()
+    elif action == "language":
+        foreign_language = params.get("language")
+        text = get_language()
     else:
         text = "No action matched!"
 
     return text
 
 
+def get_language(foreign_language):
+    """
+    Tells user hello in different languages
+    """
+    print('language action')
+    
+    text = None
+    if foreign_language is "french":
+        text = "bonjour"
+    elif foreign_language is "german":
+        text = "hallo"
+    elif foreign_language is "spanish":
+        text = "hola"
+    elif foreign_language is "russian"
+        text = "Здравствуйте"
+    else foreign_language is "italian"
+        text = "ciao"
+    return text
+        
+        
 def hello(person_name):
     """
     Says "Hello World" to the user
