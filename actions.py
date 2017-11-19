@@ -16,6 +16,7 @@ def choose_action(action, params):
         text = get_randomfact()
     elif action == "hello-language":
         foreign_language = params.get("language")
+        foriegn_language = foreign_language.lower()
         text = get_language(foreign_language)
     else:
         text = "No action matched!"
