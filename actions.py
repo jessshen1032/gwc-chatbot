@@ -36,9 +36,9 @@ def get_language(foreign_language):
         text = "hallo"
     elif foreign_language is "spanish":
         text = "hola"
-    elif foreign_language is "russian"
+    elif foreign_language is "russian":
         text = "Здравствуйте"
-    elif foreign_language is "italian"
+    elif foreign_language is "italian":
         text = "ciao"
     else:
         text = "No language found!"
