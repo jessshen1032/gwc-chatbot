@@ -7,12 +7,9 @@ def choose_action(action, params):
 
     if action == "hello":
         person_name = params.get("given-name")
-        text = hello(person_name)
-        """ 
-        text2 = ['That\'s a pretty name.', 'Nice to meet you.', 'My name is Kora.']
-         text = text1 
-         + '. ' + text2
-        """
+        text1 = hello(person_name)
+        text2 = get_randomfact() 
+        text = text1 + text2
     elif action == "time":
         text = get_time()
     elif action == "date":
