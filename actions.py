@@ -8,7 +8,7 @@ def choose_action(action, params):
     if action == "hello":
         person_name = params.get("given-name")
         text1 = hello(person_name)
-        text2 = get_randomfact() 
+        text2 = get_randomgreeting() 
         text = text1 + text2
     elif action == "time":
         text = get_time()
