@@ -9,7 +9,7 @@ def choose_action(action, params):
         person_name = params.get("given-name")
         text1 = hello(person_name)
         text2 = ['That\'s a pretty name.', 'Nice to meet you.', 'My name is Kora.']
-        text = text1 + text2
+        text = text1 + '. ' + text2
     elif action == "time":
         text = get_time()
     elif action == "date":
